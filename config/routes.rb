@@ -1,7 +1,8 @@
 RenewLegal::Application.routes.draw do
   
-  #root :to => 'About#index'
+  root :to => "about#index"
 
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
