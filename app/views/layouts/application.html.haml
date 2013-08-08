@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+%html
+	%head
+		%title Renew Legal
+		= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true 
+		= javascript_include_tag "application", "data-turbolinks-track" => true 
+		= csrf_meta_tags 
+
+	%body
+
+
+		#wrap
+			.navbar.navbar-fixed-top
+				.navbar-inner
+					.container
+						.nav-collapse.collapse
+							%ul.nav
+								%li
+									= link_to "Home", root_path
+								%li
+									= link_to "About", about_path
+										
+								%li
+									= link_to "Contact", contact_path
+										
+
+			.container
+				= yield
+
+			#push
+			    
+		#footer
+			.container
+				%p.muted.credit
+					Registered in England & Wales: Company Number 8056621​ | Authorised and regulated by the Solicitors Regulation Authority 		 
